@@ -1,0 +1,22 @@
+[
+    {
+        "iconUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Korduene_Logo.png",
+        "fileHash": "sha256-0276c6ef1f5a2bc33d723f639aeb1d416d297d04032514cf585d327e963b0f4b",
+        "apiVersion": 1,
+        "repositoryUrl": "https://github.com/mustafatekin93/cs",
+        "fileSize": 7372,
+        "status": 1,
+        "language": "tr",
+        "authors": [
+            
+        ],
+        "tvTypes": [
+            "TvSeries"
+        ],
+        "version": 1,
+        "internalName": "ExampleProvider",
+        "description": "deneme CS",
+        "url": "https://raw.githubusercontent.com/mustafatekin93/cs/builds/ExampleProvider.cs3",
+        "name": "ExampleProvider"
+    }
+]
