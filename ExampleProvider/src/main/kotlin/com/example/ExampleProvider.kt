@@ -80,15 +80,17 @@ class DiziyouProvider : MainAPI() { // All providers must be an instance of Main
         }
 
         return newTvSeriesLoadResponse(title, url, TvType.TvSeries, episodes) {
-            this.posterUrl = poster
-            this.plot      = description
-            this.year      = year
-            this.tags      = tags
-            this.rating    = rating
-            addActors(actors)
-            addTrailer(trailer)
-        }
-    }
+    this.posterUrl = poster
+    this.plot = description
+    this.year = year
+    this.tags = tags
+    this.score = rating?.let { Score.from10(it) }
+    this.actors = actors?.map { ActorData(it) }
+    this.trailers = trailer?.let {
+        mutableListOf(TrailerData(it, null, false))
+    } ?: mutableListOf()
+}
+    
 
     override suspend fun loadLinks(data: String, isCasting: Boolean, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit): Boolean {
         Log.d("DZY", "data » $data")
