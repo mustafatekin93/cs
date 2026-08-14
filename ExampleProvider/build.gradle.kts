@@ -9,8 +9,7 @@ version = 1
 cloudstream {
     // All of these properties are optional, you can safely remove any of them.
 
-    description = "deneme CS "
-    authors = "ugumaf"
+    description = "deneme CS"
 
     /**
     * Status int as one of the following:
