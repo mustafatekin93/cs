@@ -4,7 +4,7 @@ import com.lagradost.cloudstream3.MainAPI
 import com.lagradost.cloudstream3.SearchResponse
 import com.lagradost.cloudstream3.TvType
 
-class ExampleProvider : MainAPI() { // All providers must be an instance of MainAPI
+class DiziyouProvider : MainAPI() { // All providers must be an instance of MainAPI
     override var mainUrl = "https://www.diziyou.one/" 
     override var name = "Diziyou"
     override val supportedTypes = setOf(TvType.Movie)
