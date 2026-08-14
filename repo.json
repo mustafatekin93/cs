@@ -1,0 +1,8 @@
+{
+  "name": "Ugumaf-CS",
+  "description": "Ugumaf CloudStream eklentileri",
+  "manifestVersion": 1,
+  "pluginLists": [
+    "https://raw.githubusercontent.com/mustafatekin93/cs/builds/plugins.json"
+  ]
+}
