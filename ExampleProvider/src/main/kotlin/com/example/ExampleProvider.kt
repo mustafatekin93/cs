@@ -1,8 +1,9 @@
 package com.example
 
-import com.lagradost.cloudstream3.MainAPI
-import com.lagradost.cloudstream3.SearchResponse
-import com.lagradost.cloudstream3.TvType
+import android.util.Log
+import com.lagradost.cloudstream3.*
+import com.lagradost.cloudstream3.utils.*
+import org.jsoup.nodes.Element
 
 class DiziyouProvider : MainAPI() { // All providers must be an instance of MainAPI
     override var mainUrl = "https://www.diziyou.one/" 
